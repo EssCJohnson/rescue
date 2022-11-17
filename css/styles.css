@@ -31,6 +31,31 @@ img {
     display:none;
 }
 
+fieldset {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding: 2%;
+}
+
+
+form #submit {
+  margin: 0 auto 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
 
 /* Style rules for header area */
 .mobile h1, .mobile h3 {
@@ -207,6 +232,11 @@ footer a{
   aside {
     grid-column: 1 / span 2;
   }
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print{
@@ -216,7 +246,7 @@ footer a{
         display: block;
     }
 
-     .mobile, .tab-desk {
+     .mobile-tablet {
        display: none;
      }   
 
@@ -249,6 +279,51 @@ footer a{
       grid-column: 1 / span 3;
       font-size: 2em;
     }
+  
+  
+/* Style rules for table */
+    table{
+      border: 1px solid #2a1f14;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    caption{
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 1%;
+    }
+
+    th, td{
+      border: 1px solid #2a1f14;
+      padding: 1%;
+    }
+
+    th{
+      background-color: #2a1f14;
+      color:  #fff;
+      font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #deccba;
+    }
+
+     /* Desktop Viewport: Style rules for form elements */
+  form {
+    width: auto;
+  }
+
+  form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+}
 /* Media Query for Large Desktop Viewports */
 
 @media screen and (min-width: 1921px) {
